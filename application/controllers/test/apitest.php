@@ -8,6 +8,7 @@ class ApiTest extends CI_Controller{
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 		$result=curl_exec($curl);
 		$info = curl_getinfo($curl);
+		print_r($result);
 		print_r($info);
 		curl_close($curl);
 	}
